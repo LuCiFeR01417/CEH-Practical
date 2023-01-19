@@ -114,7 +114,7 @@ HASHCAT and HASHID:-
 -j shows JohnTheRipper format in output
 
 
-2)Hashcat -a 3 -m 900 hash.txt usr/share/wordlists/rockyou.txt (will not recommend for cracking the hash instead use crackstation or cyberchef)
+2)Hashcat -a 3 -m 900 hash.txt usr/share/wordlists/rockyou.txt (will not recommend for cracking the hash instead use crackstation or cyberchef or hashes.com)
 
 -a attack mode
 -m hashtype
