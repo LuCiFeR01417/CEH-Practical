@@ -2,6 +2,10 @@ NMAP SCAN:- (only one big scan needed)
 
 nmap -sC -sV -O -A -T4 -p- <targetip.addr> -oN <output.txt>
 
+for rdp remember 3389 port (note the IP, pass will be given)
+for phonesploit 5555 adb port (do note this as well from nmap report)
+
+
 -sV = service version detection
 -O = Obviously OS detection
 -sC = Script scan  --script will be default (else you can choose)
@@ -57,6 +61,7 @@ SQLMAP:-
 HYDRA:-
 
 1) hydra -l (username) -P (wordlists) ftp://(target IP)
+or hydra -L usernames.txt -P pass.txt (target IP) ssh
 
 2) ftp (target IP) -- for connecting
 
