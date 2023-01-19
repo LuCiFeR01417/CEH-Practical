@@ -79,6 +79,12 @@ JOHN:-
 
 1) sudo john --format=raw-sha1 or md5 --wordlist(/rockyou.txt) (file.txt)
 
+--> First analyze hash type - `john hashfile.hash`
+
+2) Then crack hash - `john hashfile.hash --wordlist=/usr/share/wordlists/rockyou.txt --format=Raw-SHA1`
+
+3) Show the cracked password - `john --show --format=Raw-SHA1 hashfile.hash` OR `john --show hashfile.hash
+
 SNOW TOOL:-
 
 1) SNOW.EXE -C -m "secret message" -p 1234> bro.txt (imp) -- in output don't use>
