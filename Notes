@@ -33,6 +33,8 @@ WIRESHARK:-
 
 7) ftp -- to filter ftp ports  and ftp-data -- for line based text data or any secret.text content file.(ftp.request too)
 
+8) To find DOS (SYN and ACK) : tcp.flags.syn == 1  , tcp.flags.syn == 1 and tcp.flags.ack == 0
+
 Extras:-
 
 1) sudo gzip -d "path".gz -- to extract
