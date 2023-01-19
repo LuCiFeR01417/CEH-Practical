@@ -1,6 +1,21 @@
+NMAP SCAN:- (only one big scan needed)
+
+nmap -sC -sV -O -A -T4 -p- <targetip.addr> -oN <output.txt>
+
+-sV = service version detection
+-O = Obviously OS detection
+-sC = Script scan  --script will be default (else you can choose)
+-A = Enable OS detection, version detection, script scanning, and traceroute
+-T4 = Aggressive level 
+-p- = Scans all the ports from 1 to 65535
+-oN = for saving the output which is a must in ceh as you'll look into the report every min.
+
+
+
+
 WIRESHARK:-
 
-1) http.request.method == POST -- For finding creds using wireshark
+1) http.request.method == POST or GET -- For finding creds using wireshark (also can merge the below ones with one another using and operator)
 
 2) udp.port == 53 -- For DNS filtering (and not tcp)
 
@@ -77,21 +92,25 @@ ls
 cd downloads
 cat accnt-info.txt
 
-HASHCAT:-
+HASHCAT and HASHID:-
 
-1)Hashcat -a 3 -m 900 hash.txt /rockyou.txt (will not recommend for cracking the hash instead use crackstation or cyberchef)
+
+1) Hashid -m or -j <hash>
+
+-m shows Hashcat mode in output
+-j shows JohnTheRipper format in output
+
+
+2)Hashcat -a 3 -m 900 hash.txt usr/share/wordlists/rockyou.txt (will not recommend for cracking the hash instead use crackstation or cyberchef)
 
 -a attack mode
 -m hashtype
-900 - md4
-1000 - NTLM
 1800 - SHA512CRYPT
-110 - SHA1 with SALT HASH
 0  - MD5
 100 - SHA1
 1400 - SHA256
 3200 - BCRYPT
-160 - HMAC-SHA1
+
 
 
 
