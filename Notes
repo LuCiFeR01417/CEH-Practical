@@ -43,6 +43,9 @@ Extras:-
 
 4) gobuster dir -u 10.10.121.51 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt  -t 100
 
+5) wpscan (Won't recommend but still sharing if it works good and if not use Burpsuite)
+wpscan -u james -P /password.txt — url http://172.16.0.27:8080/CEH/
+
 
 SQLMAP:-
 
@@ -100,7 +103,7 @@ cat accnt-info.txt
 HASHCAT and HASHID:-
 
 
-1) Hashid -m or -j <hash>
+1) Hashid -m or -j <hash> (will display the hash mode)
 
 -m shows Hashcat mode in output
 -j shows JohnTheRipper format in output
@@ -115,6 +118,8 @@ HASHCAT and HASHID:-
 100 - SHA1
 1400 - SHA256
 3200 - BCRYPT
+
+
 
 
 
