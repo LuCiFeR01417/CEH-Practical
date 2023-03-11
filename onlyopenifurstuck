@@ -1,0 +1,128 @@
+Target Range
+172.16.0.1/24
+
+Ethical-Hacker-1
+172.16.0.10
+
+Windows Server 2016
+172.16.0.27
+
+SQL Injection Machine Name:
+172.16.0.89
+Microsoft SQL Server 2017
+SMB Credentials:
+Administrator:shadow123
+
+Android Machine
+172.16.0.30
+
+FTP Machine
+172.16.0.40
+
+SSH Machine
+172.16.0.58
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Question#1
+172.16.0.89
+Windows Server 2019
+
+Question#2
+Suspicious Account: Harris
+
+Question#3- 
+RDP Open for this machine - 172.16.0.27
+
+Question#4
+Decode File DES(ECB) format
+ftp:172.16.0.40
+blackhat:test
+flag1.txt:4700056
+
+Question#5 (Overwrite Original File)
+steganography
+Path: C:\Users\Admin\Documents\Snow\Confidential.txt
+Note: The password of Confidential.txt is “test.” Enter only numeric values in the answer field.
+
+Question#6
+Bruteforce WP-Admin - http://172.16.0.27:8080/CEH
+james:apple123
+
+Question#7
+Find Hash And decrypt
+http://172.16.0.27:8080/DVWA/hackable/uploads/Hash.txt
+Hash.txt:Secret123
+
+Question#8
+Server 2019 Machine:
+Possible: 172.16.0.27
+Port: 445 - Possible Exploitation SMB Share
+"C:\Administrator\Documents\Find me"
+Retrieve SECRET.txt
+
+SECRET.txt:28098889900
+
+Question#9
+DoS - Document Folder
+172.16.0.40
+
+Question#10
+DDos Numbers: 4
+172.16.0.11
+172.16.0.89
+172.16.0.27
+172.16.0.40
+
+Question#11
+FTP Bruteforce
+admin:shadow123
+Blackhat:test
+Flag.txt: Adam@smith
+
+Question#12
+RDP - And delete file
+IP: 172.16.0.27
+Administrator:shadow123
+Doc Number F/N201010988818
+
+Command to login
+xfreerdp /u:administrator /p:shadow123 /f /v:172.16.0.27
+
+Question#13
+Plain Text Credentials - Wireshark
+sam/test
+
+Question#14
+contact number of kety via sql injection
+Kety:1-202-502-2431
+
+Question#15
+www.moviescope.com - Use Owasp
+HTTP Method - POST
+Payload: ZAP' OR '1'='1'--
+
+Question#16
+Calculate Hash - 
+File2
+
+Question#17
+Decrypt file via Veracrypt
+9419512131
+
+Question#18
+CrypTool - Cry-RC4
+Account# 5000612345678
+
+Question#19
+Android SD Card: /storage/self/primary/TradeInfo
+Trade Account# 1876890
+
+Question#20
+Encodeddata.txt:magic1234
+IP Address: 172.16.0.40
+Tool: BCText Encoder
+
+
+
+
