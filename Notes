@@ -1,4 +1,4 @@
-NMAP SCAN:- (only one big scan needed)
+NMAP SCAN:- (only one big scan needed) theek hai
 
 nmap -sC -sV -O -A -T4 -p- <targetip.addr> -oN <output.txt>
 
